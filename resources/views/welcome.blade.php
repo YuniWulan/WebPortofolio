@@ -51,7 +51,7 @@
       </a>
      </li>
      <li>
-      <a class="text-gray-600 hover:text-blue-600" href="#portofolio">
+      <a class="text-gray-600 hover:text-blue-600" href="{{ route('portfolios.index') }}">
        Portofolio
       </a>
      </li>
@@ -216,7 +216,7 @@
       <p class="text-gray-700 mt-4">
         I'm just a message away! Fill out the form or reach me via email and let's talk about your next big idea.
       </p>
-      
+
     <form action="{{ route('contact.store') }}" method="POST" class="max-w-2xl mx-auto mt-8 space-y-6 text-left">
       @csrf
         <div>
